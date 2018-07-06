@@ -1,0 +1,9 @@
+Finding the public IP address of a given instance using the EC2 console: 
+
+1. Login to AWS console and navigate to EC2 service. 
+
+2. On left hand side of window, click on "Instances" to view all instances. 
+
+3. Select the instance you want to connect to by checking the box to the left of the name. 
+
+4. The public IP address is under the "Descprition" tag under the list of instances. 
