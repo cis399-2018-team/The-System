@@ -1,0 +1,11 @@
+system1
+	instance-ID = i-069968689c4f8919c
+	private-IPs = 10.0.7.236
+
+system2
+	instance-ID = i-0a1d5edce4092acdd
+	private-IPs = 10.0.7.8
+
+system3
+	instance-ID = i-0d80e0ced1e3ad0bf
+	private-IPs = 10.0.7.108
