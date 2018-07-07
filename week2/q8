@@ -1,0 +1,10 @@
+ubuntu@ip-10-0-7-108:~$ netstat -aton
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       Timer
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      off (0.00/0/0)
+tcp        0      0 10.0.7.108:22           128.223.223.131:54258   ESTABLISHED keepalive (2161.45/0/0)
+tcp        0      0 10.0.7.108:22           128.223.223.131:7851    ESTABLISHED keepalive (2308.90/0/0)
+tcp        0    324 10.0.7.108:22           128.223.223.131:51260   ESTABLISHED on (0.04/0/0)
+tcp        0      0 10.0.7.108:22           128.223.223.131:43664   ESTABLISHED keepalive (3504.94/0/0)
+tcp        0      0 10.0.7.108:22           128.223.223.131:51103   ESTABLISHED keepalive (3406.63/0/0)
+tcp6       0      0 :::22                   :::*                    LISTEN      off (0.00/0/0)
