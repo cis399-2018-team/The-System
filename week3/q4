@@ -1,0 +1,12 @@
+root@ip-10-0-7-236:~/.ssh# cp authorized_keys authorized_keys.og
+root@ip-10-0-7-236:~/.ssh# rm authorized_keys
+root@ip-10-0-7-236:~/.ssh# ls
+authorized_keys.og  public.pub
+root@ip-10-0-7-236:~/.ssh# puppet agent -t
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-7-236.us-west-2.compute.internal
+Info: Applying configuration version '1531697932'
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[mhernan_key]/ensure: created
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[quinn_key]/ensure: created
+Notice: Finished catalog run in 0.11 seconds
