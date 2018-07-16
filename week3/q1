@@ -1,0 +1,18 @@
+root@ip-10-0-7-8:/# apt-get remove ssh
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages will be REMOVED:
+  ssh
+0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
+After this operation, 100 kB disk space will be freed.
+Do you want to continue? [Y/n] Y
+(Reading database ... 79965 files and directories currently installed.)
+Removing ssh (1:7.2p2-4ubuntu2.4) ...
+root@ip-10-0-7-8:/# puppet agent -t
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-7-8.us-west-2.compute.internal
+Info: Applying configuration version '1531697932'
+Notice: /Stage[main]/Sshd/Package[ssh]/ensure: created
+Notice: Finished catalog run in 1.61 seconds

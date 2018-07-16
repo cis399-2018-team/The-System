@@ -1,0 +1,10 @@
+root@ip-10-0-7-8:/# rm etc/ssh/sshd_config
+root@ip-10-0-7-8:/# puppet agent -t
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-7-8.us-west-2.compute.internal
+Info: Applying configuration version '1531697932'
+Notice: /Stage[main]/Sshd/File[/etc/ssh/sshd_config]/ensure: defined content as '{md5}226f2a96605dd8e0d096be6aef6ea870'
+Info: /Stage[main]/Sshd/File[/etc/ssh/sshd_config]: Scheduling refresh of Service[sshd]
+Notice: /Stage[main]/Sshd/Service[sshd]: Triggered 'refresh' from 1 events
+Notice: Finished catalog run in 0.17 seconds
