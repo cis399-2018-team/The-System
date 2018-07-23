@@ -1,0 +1,11 @@
+# Instance 2
+
+10.0.7.151 - - [23/Jul/2018:00:56:36 +0000] "GET /index.html HTTP/1.1" 200 11632 "-" "ELB-HealthChecker/1.0"
+10.0.7.151 - - [23/Jul/2018:00:56:51 +0000] "GET /hello.html HTTP/1.1" 200 428 "-" "Mozilla/5.0 (X11; CrOS x86_64 10718.58.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.70 Safari/537.36"
+10.0.7.22 - - [23/Jul/2018:00:56:54 +0000] "GET /index.html HTTP/1.1" 200 11632 "-" "ELB-HealthChecker/1.0"
+
+# Instance 3
+
+10.0.7.22 - - [23/Jul/2018:00:59:24 +0000] "GET /index.html HTTP/1.1" 200 11632 "-" "ELB-HealthChecker/1.0"
+10.0.7.151 - - [23/Jul/2018:00:59:36 +0000] "GET /index.html HTTP/1.1" 200 11632 "-" "ELB-HealthChecker/1.0"
+10.0.7.22 - - [23/Jul/2018:00:59:43 +0000] "GET /hello.html HTTP/1.1" 404 546 "-" "Mozilla/5.0 (X11; CrOS x86_64 10718.58.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.70 Safari/537.36"
