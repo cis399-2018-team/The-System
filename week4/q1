@@ -1,1 +1,2 @@
-http://thesystembalancer-472791023.us-west-2.elb.amazonaws.com/hello.html
+# Accessing page on instance 2
+http://ec2-54-149-151-40.us-west-2.compute.amazonaws.com/hello.html
