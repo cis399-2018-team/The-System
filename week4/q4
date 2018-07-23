@@ -1,0 +1,7 @@
+We shut down the apache server on system2, and reloaded the webpage through TheSystemBalancer address.
+The page loaded up without an issue.
+We saw that the balancer 'status' switched to showing '1 of 2 instances in service'.
+Then, we shut down the apache server on system1, and refreshed the webpage on TheSystemBalancer,
+we received a blank page, and the balancer status showed '0 of 2 instances in service'
+When we started the apache server on either system, and the page showed up on TheSystemBalancer.
+The balancer status showed that the instance was back in service.
