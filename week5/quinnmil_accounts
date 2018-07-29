@@ -1,0 +1,10 @@
+Instance : user : status (reason for failure)
+
+injoker2 : quinn : success
+mntnttil2 : quinn : failure (Permission denied)
+jbeder2 : quinnmil : success
+aarcher-agent1 : quinn : success
+aarcher-agent2 : quinn : success
+alajaji_ins : null : failure (no user acct created) 
+ashears_instance : null : failure (no user acct created)
+
