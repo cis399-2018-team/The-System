@@ -1,10 +1,25 @@
+[TEAMNAME]
 Instance : user : status (reason for failure)
 
+[Chen and Tai]
 injoker2 : quinn : success
-mntnttil2 : quinn : failure (Permission denied)
+mntnttil2 : quinn : success
+
+[leedle]
 jbeder2 : quinnmil : success
+
+[Creston and Alex]
 aarcher-agent1 : quinn : success
 aarcher-agent2 : quinn : success
-alajaji_ins : null : failure (no user acct created) 
-ashears_instance : null : failure (no user acct created)
 
+[A^3]
+alajaji_ins : quinnmil : success
+ashears_instance : quinnmil : success
+
+[Group 3]
+alonzo1 : quinnmil : success
+alonzo2 : quinnmil : success
+
+[Vandrea]
+vandrea-agent1 : null : failure (no account made)
+vandrea-agent2 : null : failure (no account made)
