@@ -1,6 +1,6 @@
 TEAM: A^3
-    Attempt to connect to alajaji_ins: no account made
-    Attempt to connect to ashears_instance: no account made
+    Attempt to connect to alajaji_ins as user 'mhernan': success
+    Attempt to connect to ashears_instance as user 'mhernan': success 
 
 TEAM: Creston and Alex
     Attempt to connect to aarcher_agent1 as user 'mhernan': success
