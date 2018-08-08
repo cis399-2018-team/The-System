@@ -1,9 +1,19 @@
 Our aim is to create a website that classifies input images using a prebuilt machine learning model in the browser.
 	- Our site will be deployed on our Apache server, using Flask as the web framework and MongoDB as our database.
+		- Will add some security modules for Apache to harden our server.
+		- Also disable directory listing, restrict access to directories, and hide server version and OS from error pages
 	- We will create various puppet files to configure and manage our server.
 		- A puppet module will be created for each essential piece of our stack.
 	- We want this website to be used as an easy to use example of what machine learning can do.
 		- This can be helpful to help anyone, of any age, to understand what current machine learning algorithms are capable of.
-	- We plan to use our database to store images that people can use to test the model.
-		- There is also a possibility of implementing an upload feature so we can have a running log of what people have classified.
-		- A possible security concern is that people may spam-upload to our database, or we may get illegal content uploaded.
+	- The user will drag images onto a webpage and the image will be classified.
+		- The page will output text stating what it thinks it is and how sure it is about it.
+		- The user will then click a button saying that if is correct or not.
+		- We plan to use our database to store data about any image that was succesfully classfied with an accuracy of 75% or higher and labled as correct by the user. 
+	- Testing of our backend will be implented using python nosetests
+		- This will help ensure we are saving clean data to our database.
+	- Testing of our site in production will be done using puppet
+		- We will randomly delete and move file and log whether puppet fixes the configuration or not.
+	- Documentation
+		- Technical documentation will be on our The-System-puppet repo
+		- Usage instructions for user will be on the site itself
