@@ -19,5 +19,6 @@ Our full stack consists of:
 
 The maintenance of this project is pretty straightforward because everything was able to be automated using Puppet. We are using our own custom written modules at the moment, but for longer term we would use the official modules for Apache, MongoDB, and Python found on Puppet Forge. This would eliminate the need to write custom exec commands to enable Apache modules and to install python packages. There could also be attempts to store the javascript code currently being linked to the our html page. We could store that code on our instances and even minify it to hopefully mitigate the load on the server
 
-
+####UPDATE
+Unfortunately I could not get the puppet configs to work. Then I tried automating a bash script and that wouldn't work. So then I tried installing everything manually on each instance and that would'nt work either. It must have something to do with my reverse proxy and VPC security settings. Currently the app is running in prototype mode statically.
 
