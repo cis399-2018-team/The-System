@@ -1,0 +1,23 @@
+For our final project we wrote a single page web app that allows users to input images into an image classifier and see what type of results the model outputs. The main goal of this project was to have a way to get feedback on machine learning models that we may be testing. The workflow being that we could push our new model to our app and have users test it. The user would then press a button stating whether or not the model classified the image correctly. We would get our feedback in the form of a JSON string that has the label of the input image and a percentage of how sure the model is about its classification. This data would then be saved to a database.
+
+A sub goal of our project is to expose more people to machine learning and just how good (or bad) it can be at classifying images. Looking forward, I could see this developing into a mobile application where people could have fun throwing images at the app and seeing what the model guesses it is.
+
+There really isn't any support issues that could happen on the user side because of the fact that the app is so simple. There could definitely be improvements in the frontend of the app, but it pretty easy to operate regardless.
+
+The only security issues that could arise are on the backend of the app. Securing the database is the main priority. Even though the data we are storing is harmless, we could encrypt it just to be safe. The python code running the backend of the app is fairly secure as we are not doing any type of user sessions at the moment. One thing that we would change in our puppet configuration is the use of the ubuntu provided mongodb package. MongoDB recommends that we don't use the mongodb package provided by Ubuntu because it is not maintained by MongoDB. In order to fix this we would have to add the official MongoDB repository to our ubuntu source lists. Another thing we would have done with more time is implemented a self-signed https certificate.
+
+Our full stack consists of:
+- 3 instances running Ubuntu 16.04.4 LTS
+	- 1 of those instances running as the puppet master
+	- the other 2 instance running the web app itself
+- Apache as our main server
+	- There is a reverse proxy that redirects all traffic requesting '/' to port 5000 where gunicorn is serving our Flask app
+- Gunicorn as our WSGI server to communicate between Apache and Flask
+	- There is a systemd service created to ensure the app is always running
+- Flask as our web framework
+- MongoDB as our database
+
+The maintenance of this project is pretty straightforward because everything was able to be automated using Puppet. We are using our own custom written modules at the moment, but for longer term we would use the official modules for Apache, MongoDB, and Python found on Puppet Forge. This would eliminate the need to write custom exec commands to enable Apache modules and to install python packages. There could also be attempts to store the javascript code currently being linked to the our html page. We could store that code on our instances and even minify it to hopefully mitigate the load on the server
+
+
+
